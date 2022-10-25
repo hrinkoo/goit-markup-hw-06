@@ -72,6 +72,45 @@
                 <use href="./images/icons.svg#icon-close-black"></use>
               </svg>
             </button>
+            <div class="user-data">
+              <p class="modal-caption">Залиште свої дані, ми вам передзвонимо</p>
+              <form class="form">
+                <div class="form-field">
+                  <label for="name">Ім'я</label>
+                  <input type="text" name="user-name" id="name" />
+                </div>
+
+                <div class="form-field">
+                  <label for="tel">Телефон</label>
+                  <input type="tel" name="tel" id="tel" />
+                </div>
+
+                <div class="form-field">
+                  <label for="mail">Пошта</label>
+                  <input type="email" name="mail" id="mail" />
+                </div>
+
+                <div class="form-field">
+                  <label for="comment">Коментар</label>
+                  <textarea
+                    name="feedback"
+                    id="comment"
+                    rows="8"
+                    placeholder="Введіть текст"
+                  ></textarea>
+                </div>
+
+                <div class="checkbox-stylization">
+                  <input type="checkbox" name="agreement" id="agreement" />
+                  <label for="agreement"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a class="link-agreement" href="">Умови договору</a></label
+                  >
+                </div>
+
+                <button class="form-button cursor" type="submit">Відправити</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -474,6 +513,12 @@
         </div>
         <div class="subscribe">
           <p class="subtitle-footer">підпишіться на розсилку</p>
+          <form>
+            <label for="email"></label>
+            <input type="email" name="mail" id="email" placeholder="E-mail" />
+
+            <button type="submit">Підписатися</button>
+          </form>
         </div>
       </div>
     </footer>
