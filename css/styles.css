@@ -796,6 +796,10 @@ svg {
   border: transparent;
 }
 
+.subscribe-button:hover {
+  background-color: #188ce8;
+}
+
 /* Button для порфолио*/
 
 .button {
