@@ -624,6 +624,7 @@ svg {
 
 .box-socials {
   width: 206px;
+  margin-right: 93px;
 }
 
 .socials {
@@ -636,6 +637,10 @@ svg {
   height: 44px;
 
   text-decoration: none;
+}
+
+.subscribe {
+  width: 570px;
 }
 
 /* Button для порфолио*/
