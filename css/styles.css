@@ -693,10 +693,6 @@ svg {
   justify-content: space-between;
 }
 
-.foot-box {
-  margin-right: 70px;
-}
-
 .subtitle-footer {
   color: var(--secondary-text-color);
 
@@ -741,7 +737,6 @@ svg {
 
 .box-socials {
   width: 206px;
-  margin-right: 93px;
 }
 
 .socials {
