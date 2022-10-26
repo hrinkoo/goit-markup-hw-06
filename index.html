@@ -73,32 +73,33 @@
               </svg>
             </button>
             <div class="user-data">
-              <p class="modal-caption">Залиште свої дані, ми вам передзвонимо</p>
               <form class="form">
-                <div class="form-field">
-                  <label for="name">Ім'я</label>
-                  <input type="text" name="user-name" id="name" />
-                </div>
+                <p class="modal-caption">Залиште свої дані, ми вам передзвонимо</p>
 
-                <div class="form-field">
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel" />
-                </div>
+                <label class="form-field"
+                  ><span class="form-info">Ім'я</span>
+                  <input class="form-input" type="text" name="user-name" />
+                </label>
 
-                <div class="form-field">
-                  <label for="mail">Пошта</label>
-                  <input type="email" name="mail" id="mail" />
-                </div>
+                <label class="form-field"
+                  ><span class="form-info">Телефон</span>
+                  <input class="form-input" type="tel" name="tel" />
+                </label>
 
-                <div class="form-field">
-                  <label for="comment">Коментар</label>
+                <label class="form-field"
+                  ><span class="form-info">Пошта</span>
+                  <input class="form-input" type="email" name="mail" />
+                </label>
+
+                <label class="form-field"
+                  ><span class="form-info">Коментар</span>
                   <textarea
+                    class="form-textarea"
                     name="feedback"
-                    id="comment"
                     rows="8"
                     placeholder="Введіть текст"
                   ></textarea>
-                </div>
+                </label>
 
                 <div class="checkbox-stylization">
                   <input type="checkbox" name="agreement" id="agreement" />
@@ -514,8 +515,9 @@
         <div class="subscribe">
           <p class="subtitle-footer">підпишіться на розсилку</p>
           <form class="form-footer">
-            <label for="email"></label>
-            <input class="footer-email" type="email" name="mail" id="email" placeholder="E-mail" />
+            <label>
+              <input class="footer-email" type="email" name="mail" placeholder="E-mail" />
+            </label>
 
             <button class="subscribe-button cursor" type="submit">
               Підписатися
