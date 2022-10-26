@@ -423,9 +423,6 @@ svg {
   width: 425px;
 }
 
-.checkbox-stylization input [type='checkbox'] {
-}
-
 .checkbox-stylization label {
   width: 401px;
 
@@ -433,6 +430,23 @@ svg {
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
+
+.form-check {
+  border: 2px solid var(--title-text-color);
+  border-radius: 25%;
+}
+
+.checkbox:checked + .form-check {
+  fill: currentColor;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* .checkbox-stylization:focus-within .form-check {
+  fill: currentColor;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+} */
 
 .link-agreement {
   color: var(--accent-color);
