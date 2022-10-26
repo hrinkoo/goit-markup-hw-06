@@ -323,7 +323,7 @@ svg {
 }
 
 .modal-caption {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
@@ -350,12 +350,17 @@ svg {
   margin-bottom: 10px;
 }
 
-.form-field:nth-child(5) {
+.form-field:nth-child(4) {
   margin-bottom: 20px;
 }
 
 .form-field:focus-within > .form-input {
   border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:not(focus-within) > .form-input {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus-visible {
@@ -371,7 +376,8 @@ svg {
 }
 
 .form-input {
-  padding: 12px 16px 12px 42px;
+  padding: 12px 42px;
+  height: 40px;
   width: 100%;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -380,12 +386,17 @@ svg {
 
 .form-picture {
   position: absolute;
-  bottom: 13px;
+  bottom: 11px;
   left: 12px;
 }
 
 .form-field:focus-within .form-picture {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:not(focus-within) .form-picture {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea {
@@ -401,6 +412,11 @@ svg {
 
 .form-field:focus-within > .form-textarea {
   border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:not(focus-within) > .form-textarea {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea:focus-visible {
@@ -423,6 +439,19 @@ svg {
   width: 425px;
 }
 
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .checkbox-text {
   width: 401px;
 
@@ -434,21 +463,23 @@ svg {
 .form-check {
   border: 2px solid var(--title-text-color);
   border-radius: 25%;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .form-check {
   fill: currentColor;
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+  transition: fill, background-color, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .checkbox-stylization:focus-within .form-check {
-  fill: currentColor;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-} */
+.checkbox:not(checked) + .form-check {
+  transition: fill, background-color, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .link-agreement {
+  margin-left: 4px;
+
   color: var(--accent-color);
 }
 
@@ -817,6 +848,11 @@ svg {
 
 .form-footer:focus-within .footer-email {
   border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-footer:not(focus-within) .footer-email {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-email:focus-visible {
